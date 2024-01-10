@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B56AB2E821C717FB0020B038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AB2E721C717FB0020B038 /* AppDelegate.swift */; };
 		B56AB2EA21C717FB0020B038 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B56AB2E921C717FB0020B038 /* GameScene.sks */; };
-		B56AB2EC21C717FB0020B038 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B56AB2EB21C717FB0020B038 /* Actions.sks */; };
 		B56AB2EE21C717FB0020B038 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AB2ED21C717FB0020B038 /* GameScene.swift */; };
 		B56AB2F021C717FB0020B038 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AB2EF21C717FB0020B038 /* GameViewController.swift */; };
 		B56AB2F321C717FB0020B038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56AB2F121C717FB0020B038 /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 		B56AB2E421C717FB0020B038 /* Arkanoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arkanoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56AB2E721C717FB0020B038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B56AB2E921C717FB0020B038 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		B56AB2EB21C717FB0020B038 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		B56AB2ED21C717FB0020B038 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B56AB2EF21C717FB0020B038 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B56AB2F221C717FB0020B038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			children = (
 				B56AB2E721C717FB0020B038 /* AppDelegate.swift */,
 				B56AB2E921C717FB0020B038 /* GameScene.sks */,
-				B56AB2EB21C717FB0020B038 /* Actions.sks */,
 				B56AB2ED21C717FB0020B038 /* GameScene.swift */,
 				B56AB2EF21C717FB0020B038 /* GameViewController.swift */,
 				B56AB2F121C717FB0020B038 /* Main.storyboard */,
@@ -100,11 +97,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = konstantin;
 				TargetAttributes = {
 					B56AB2E321C717FB0020B038 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -135,7 +133,6 @@
 				B56AB2EA21C717FB0020B038 /* GameScene.sks in Resources */,
 				B56AB2F521C717FC0020B038 /* Assets.xcassets in Resources */,
 				B56AB2F821C717FC0020B038 /* LaunchScreen.storyboard in Resources */,
-				B56AB2EC21C717FB0020B038 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +197,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -261,6 +259,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -303,8 +302,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kotmynote.Arkanoid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +320,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.kotmynote.Arkanoid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
